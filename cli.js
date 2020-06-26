@@ -6,7 +6,7 @@ const dotenv = require('dotenv-flow');
 function printHelp() {
   console.log(
     [
-      'Usage: dotenv [-p <path>] [-- command]',
+      'Usage: dotenv-flow [-p <path>] [-- command]',
       '  -p <path>     Path where `dotenv-flow` should read `.env*` files from. Defaults to current working directory.',
       '  command       Command to run with ENV vars. Put `--` before the command if it takes additional arguments, otherwise they might get lost.',
     ].join('\n')

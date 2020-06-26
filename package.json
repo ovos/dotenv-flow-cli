@@ -5,7 +5,7 @@
   "license": "MIT",
   "main": "index.js",
   "bin": {
-    "dotenv": "./cli.js"
+    "dotenv-flow": "./cli.js"
   },
   "dependencies": {
     "cross-spawn": "^7.0.3",
