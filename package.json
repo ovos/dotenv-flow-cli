@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "A cli executable to run commands with the ENV variables loaded by dotenv-flow",
   "license": "MIT",
+  "repository": "github:ovos/dotenv-flow-cli",
   "main": "index.js",
   "bin": {
     "dotenv-flow": "./cli.js"
