@@ -4,14 +4,13 @@ This is a cli executable for [dotenv-flow](https://github.com/kerimdzhanov/doten
 
 ## Installing
 
-Either install it globally: (`dotenv-flow` is a peer dependency)
+Either install it globally:
 
-NPM
 ```bash
-$ npm install -g dotenv-flow-cli dotenv-flow
+$ npm install -g dotenv-flow-cli
 ```
 
-or add to your project, where you already have `dotenv-flow` added to your dependencies:
+or add to your project:
 
 Yarn
 ```bash
@@ -20,7 +19,7 @@ $ yarn add dotenv-flow-cli
 
 NPM
 ```bash
-$ npm add dotenv-flow-cli
+$ npm install dotenv-flow-cli
 ```
 
 ## Usage
