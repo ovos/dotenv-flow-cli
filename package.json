@@ -1,0 +1,17 @@
+{
+  "name": "dotenv-flow-cli",
+  "version": "1.0.0",
+  "description": "A cli executable to run commands with the ENV variables loaded by dotenv-flow",
+  "license": "MIT",
+  "main": "index.js",
+  "bin": {
+    "dotenv": "./cli.js"
+  },
+  "dependencies": {
+    "cross-spawn": "^7.0.3",
+    "minimist": "^1.2.5"
+  },
+  "peerDependencies": {
+    "dotenv-flow": "*"
+  }
+}
