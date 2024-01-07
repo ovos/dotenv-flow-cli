@@ -11,22 +11,27 @@ cross-spawn@^7.0.3:
     shebang-command "^2.0.0"
     which "^2.0.1"
 
-dotenv-flow@*:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/dotenv-flow/-/dotenv-flow-3.1.0.tgz#2abcb4661cf2d0ca5b46d8ff5e95c1045ade9938"
-  integrity sha512-BMA8vfu2DbAx5x5G3C+tgb1hCbONggZTSpBE7B4yCPG5vziKX/lA3CzsjdGKlPvLxZgTbP1qb+KlWux8pYqsmA==
-  dependencies:
-    dotenv "^8.0.0"
+dotenv-expand@*:
+  version "10.0.0"
+  resolved "https://registry.yarnpkg.com/dotenv-expand/-/dotenv-expand-10.0.0.tgz#12605d00fb0af6d0a592e6558585784032e4ef37"
+  integrity sha512-GopVGCpVS1UKH75VKHGuQFqS1Gusej0z4FyQkPdwjil2gNIv+LNsqBlboOzpJFZKVT95GkCyWJbBSdFEFUWI2A==
 
-dotenv@^8.0.0:
-  version "8.2.0"
-  resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-8.2.0.tgz#97e619259ada750eea3e4ea3e26bceea5424b16a"
-  integrity sha512-8sJ78ElpbDJBHNeBzUbUVLsqKdccaa/BXF1uPTw3GrvQTBgrQrtObr2mUrE38vzYd8cEv+m/JBfDLioYcfXoaw==
+dotenv-flow@*:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/dotenv-flow/-/dotenv-flow-4.1.0.tgz#a78e79dcaf08a48200192eb5ed1e5af11062b861"
+  integrity sha512-0cwP9jpQBQfyHwvE0cRhraZMkdV45TQedA8AAUZMsFzvmLcQyc1HPv+oX0OOYwLFjIlvgVepQ+WuQHbqDaHJZg==
+  dependencies:
+    dotenv "^16.0.0"
+
+dotenv@^16.0.0:
+  version "16.3.1"
+  resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-16.3.1.tgz#369034de7d7e5b120972693352a3bf112172cc3e"
+  integrity sha512-IPzF4w4/Rd94bA9imS68tZBaYyBWSCE47V1RGuMrB94iyTOIEwRmVL2x/4An+6mETpLrKJ5hQkB8W4kFAadeIQ==
 
 isexe@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/isexe/-/isexe-2.0.0.tgz#e8fbf374dc556ff8947a10dcb0572d633f2cfa10"
-  integrity sha1-6PvzdNxVb/iUehDcsFctYz8s+hA=
+  integrity sha512-RHxMLp9lnKHGHRng9QFhRCMbYAcVpn69smSGcq3f36xjgVVWThj4qqLbTLlq7Ssj8B+fIQ1EuCEGI2lKsyQeIw==
 
 minimist@^1.2.6:
   version "1.2.8"
