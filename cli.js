@@ -2,6 +2,7 @@
 const spawn = require('cross-spawn');
 const argv = require('minimist')(process.argv.slice(2));
 const dotenv = require('dotenv-flow');
+const dotenvExpand = require('dotenv-expand');
 
 function printHelp() {
   console.log(
@@ -19,7 +20,7 @@ if (argv.help) {
 }
 
 const path = argv.p;
-dotenv.config({ path });
+dotenvExpand.expand(dotenv.config({ path }));
 
 const command = argv._[0];
 if (!command) {
