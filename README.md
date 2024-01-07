@@ -44,3 +44,14 @@ Put `--` separator before the command if it takes additional arguments, otherwis
 ```bash
 $ dotenv-flow -- my-command -p something
 ```
+
+### Variable expansion
+To allow it to be a drop-in replacement for [dotenv-cli](https://github.com/motdotla/dotenv-cli) variable interpolation (expanding) is automatically enabled using [dotenv-expand](https://github.com/motdotla/dotenv-expand) under the hood.
+
+For example:
+```
+IP=127.0.0.1
+PORT=1234
+APP_URL=http://${IP}:${PORT}
+```
+Using the above example `.env` file, `process.env.APP_URL` will be resolved to `http://127.0.0.1:1234`.
