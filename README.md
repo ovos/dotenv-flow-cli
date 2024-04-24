@@ -32,6 +32,13 @@ This will load the variables from the `.env*` files in the current working direc
 
 For more information about how the `.env*` files are loaded, please refer to [dotenv-flow docs](https://github.com/kerimdzhanov/dotenv-flow).
 
+### Custom environment
+
+You may specify NODE_ENV with the `-e` option:
+```bash
+$ dotenv-flow -e environment <command with arguments>
+```
+
 ### Custom path
 You may specify a path where your `.env*` files are located with the `-p` option:
 ```bash
