@@ -7,9 +7,10 @@ const dotenvExpand = require('dotenv-expand');
 function printHelp() {
   console.log(
     [
-      'Usage: dotenv-flow [-p <path>] [-- command]',
-      '  -p <path>     Path where `dotenv-flow` should read `.env*` files from. Defaults to current working directory.',
-      '  command       Command to run with ENV vars. Put `--` before the command if it takes additional arguments, otherwise they might get lost.',
+      'Usage: dotenv-flow [-e <environment] [-p <path>] [-- command]',
+      '  -e <environment>   Environment string which is assinged to NODE_ENV. Defaults to the current environment variable, NODE_ENV.',
+      '  -p <path>          Path where `dotenv-flow` should read `.env*` files from. Defaults to current working directory.',
+      '  command            Command to run with ENV vars. Put `--` before the command if it takes additional arguments, otherwise they might get lost.',
     ].join('\n')
   );
 }
@@ -20,7 +21,8 @@ if (argv.help) {
 }
 
 const path = argv.p;
-dotenvExpand.expand(dotenv.config({ path }));
+const node_env = argv.e;
+dotenvExpand.expand(dotenv.config({ path , node_env }));
 
 const command = argv._[0];
 if (!command) {
